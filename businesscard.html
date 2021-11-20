@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="businesscard.css">
+		<script src="businesscard.js"></script>
+		<link rel="icon" type="image/jpeg" href="tree.jpg" />
+		<title>Лицевая сторона визитной карточки</title>
+	</head>
+	<body onload="onPageload()">
+		<img title="Just bicycle" src="bicycle.svg" class="bicycle" id="bicycle"/>
+		<img onClick="toggleLight()" title="Turn on / off" src="chandelier-svgrepo-com.svg" class="lamp"/>
+		<div class='right-bottom-corner'></div>
+		<div class='left-top-corner'></div>
+		<div class='right-top-corner'></div>
+		<div class="slides">
+			<div class="slide hidden" id="first-slide">
+				<p>Веб-разработчик познавший дзен<br>(❁´◡`❁)</p>
+			</div>
+			<p class="in-dark slide hidden" id='dev'>Ссылка на резюме внизу 😎</p>
+			<address class="hh">
+				<a class="hh-icon" href="https://hh.ru/resume/f9c05f5dff0961b6f80039ed1f435254617475"></a>
+			</address>
+		</div>
+	</body>
+</html>

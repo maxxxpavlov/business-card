@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "Open Sans Condensed";
+  src: url("OpenSansCondensed-Light.ttf") format("truetype");
+}
+body {
+	background-color: yellow;
+	font-family: "Open Sans Condensed";
+	scroll-behavior: smooth;
+	margin: 0;
+	overflow: hidden;
+	height: 100%;
+	user-select: none;
+}
+.lamp {
+	position:  absolute;
+	top: 0;
+	left: 60%;
+	height: 100px;
+	cursor: pointer;
+	z-index: 99;
+}
+.bicycle {
+	position: absolute;
+	width: 100px;
+	bottom: 230px;
+	right: 400px;
+	height: 100px;
+	transform: rotate(0.87turn);
+}
+.bicycle:hover {
+	z-index: 999;
+	right: 500px;
+	bottom: 287;
+}
+.left-top-corner {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-top: 400px solid black;
+	border-right: 400px solid transparent;
+}
+.right-top-corner {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 0;
+	height: 0;
+	border-top: 400px solid black;
+	border-left: 200px solid black;
+}
+.right-bottom-corner {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 0;
+	height: 0;
+	border-bottom: 700px solid black;
+	border-left: 700px solid transparent;
+}
+.slide {
+	text-align: center;
+	font-size: 30px;
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	margin-top: 50%;
+	transition: all 1s;
+}
+.slide.shown {
+	transition: 2s;
+	margin-top: 55% !important;
+	opacity: 1;
+}
+.slide.in-dark {
+	color: yellow;
+	margin-top: -10%;
+}
+.slide.hidden {
+	visibility: 0;
+  	opacity: 0;
+}
+.slides {
+	display: block;
+	margin: 0 auto;
+	width: 50%;
+}
+.hh {
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	margin: 0 auto;
+	position: absolute;
+	bottom: 10%;
+	/*top: 90%;*/
+	left: 49%;
+	opacity: 0;
+}
+.hh.shown{
+	transition: all 1s;
+	opacity: 1;
+}
+.hh-icon {
+	background-image: url(min-hh-red.png);
+	background-size: 30px;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+}
