@@ -20,10 +20,12 @@ function toggleLight(){
 	if(style.backgroundColor === "rgb(255, 255, 0)"){
 		document.getElementById('dev').classList.remove('hidden')
 		document.getElementById('bicycle').style.opacity = 0
+		document.getElementById('fire').style.opacity = 0
 		body.style.background = 'black'
 	}else{
 		document.getElementById('bicycle').style.opacity = 1
 		document.getElementById('dev').classList.add('hidden')
+		document.getElementById('fire').style.opacity = 1
 		body.style.background = 'yellow'
 	}
 }

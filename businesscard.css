@@ -19,6 +19,14 @@ body {
 	cursor: pointer;
 	z-index: 99;
 }
+.fire {
+	position:  absolute;
+	bottom: 1px;
+	left: 10%;
+	height: 100px;
+	cursor: pointer;
+	z-index: 99;
+}
 .bicycle {
 	position: absolute;
 	width: 100px;
@@ -47,7 +55,7 @@ body {
 	right: 0;
 	width: 0;
 	height: 0;
-	border-top: 400px solid black;
+	border-top: 2000px solid black;
 	border-left: 200px solid black;
 }
 .right-bottom-corner {
