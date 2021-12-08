@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Open Sans Condensed";
-  src: url("OpenSansCondensed-Light.ttf") format("truetype");
+  src: url("fonts/OpenSansCondensed-Light.ttf") format("truetype");
 }
 body {
 	background-color: yellow;
@@ -109,7 +109,7 @@ body {
 	opacity: 1;
 }
 .hh-icon {
-	background-image: url(min-hh-red.png);
+	background-image: url(media/min-hh-red.png);
 	background-size: 30px;
 	display: inline-block;
 	width: 30px;
